@@ -1,0 +1,11 @@
+{
+    "name": "kesmenenver/service-layer",
+    "description": "The Service Layer is a design pattern that will help you to abstract your logic when you need to use different front-end on your application, for your domain logic",
+    "authors": [
+        {
+            "name": "Enver KESMEN",
+            "email": "kesmenenver@gmail.com"
+        }
+    ],
+    "require": {}
+}
