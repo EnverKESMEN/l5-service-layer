@@ -1,5 +1,5 @@
 {
-    "name": "kesmenenver/service-layer",
+    "name": "kesmenenver/servicelayer",
     "description": "The Service Layer is a design pattern that will help you to abstract your logic when you need to use different front-end on your application, for your domain logic",
     "authors": [
         {
@@ -10,8 +10,13 @@
     "extra": {
         "laravel": {
             "providers": [
-                "kesmenenver\\servicelayer\\ServiceLayerServiceProvider"
+                "KesmenEnver\\ServiceLayer\\ServiceLayerServiceProvider"
             ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "KesmenEnver\\ServiceLayer\\": "src/"
         }
     },
     "minimum-stability": "dev",
