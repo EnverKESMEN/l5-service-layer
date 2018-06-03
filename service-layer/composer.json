@@ -7,6 +7,13 @@
             "email": "kesmenenver@gmail.com"
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "kesmenenver\\servicelayer\\ServiceLayerServiceProvider"
+            ]
+        }
+    },
     "minimum-stability": "dev",
     "require": {}
 }
