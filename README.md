@@ -75,7 +75,7 @@ And finally, use the repository in the controller:
 ```php
 public function store(CreateProductRequest $request, CreateProductServiceInterface $createProductService)
 {
-    $product = $createProductService->make($request);
+    $product = $createProductService->make($request->toArray());
     return response()->json($product);
 }
 ```
