@@ -70,7 +70,7 @@ class CreateProductService implements CreateProductServiceInterface
 }
 ```
 
-And finally, use the repository in the controller:
+And finally, use the service in the controller:
 
 ```php
 public function store(CreateProductRequest $request, CreateProductServiceInterface $createProductService)
