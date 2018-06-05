@@ -1,5 +1,5 @@
-# l5-service-layer
-Laravel Repositories is a package for Laravel 5 which is used to abstract the bussiness logic in service layer. This makes applications much easier to maintain.
+# Laravel Service Layer
+Laravel Service Layer is a package for Laravel 5 which is used to abstract the bussiness logic in service layer. This makes applications much easier to maintain.
 
 ## Installation
 
@@ -73,13 +73,13 @@ class CreateProductService implements CreateProductServiceInterface
 And finally, use the repository in the controller:
 
 ```php
-public function store(CreateProductRequest $request, CreateProductService $createProductService)
+public function store(CreateProductRequest $request, CreateProductServiceInterface $createProductService)
 {
     $product = $createProductService->make($request);
     return response()->json($product);
 }
 ```
-We use Interfacin controller for DI. Laravel needs to know where this interface is implemented. Just add this code snippet to the ```register()``` method in the ```/app/Providers/AppServiceProvider.php``` class.
+We use Interface in controller for DI. Laravel needs to know where this interface is implemented. Just add this code snippet to the ```register()``` method in the ```/app/Providers/AppServiceProvider.php``` class.
 
 ```php
  $this->app->bind(
